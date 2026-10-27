@@ -2,10 +2,7 @@
 
 // constructor
 Task::Task() {}; // default
-Task::Task(int id, std::string description) {
-  this->id = id;
-  this->description = description;
-}
+Task::Task(std::string description) { this->description = description; }
 
 // set
 void Task::set_id(int new_id) { id = new_id; }
