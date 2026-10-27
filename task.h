@@ -4,20 +4,20 @@
 
 class Task {
 private:
-  std::string id;
+  int id;
   std::string description;
 
 public:
   // constructor
   Task(); // default
-  Task(std::string id, std::string description);
+  Task(int id, std::string description);
 
   // set
-  void set_id(std::string new_id);
+  void set_id(int new_id);
   void set_description(std::string new_description);
 
   // get
-  std::string get_id();
+  int get_id();
   std::string get_description();
 
   // methods
