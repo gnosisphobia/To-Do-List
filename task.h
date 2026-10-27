@@ -13,8 +13,8 @@ public:
   Task(std::string id, std::string description);
 
   // set
-  void set_id();
-  void set_description();
+  void set_id(std::string new_id);
+  void set_description(std::string new_description);
 
   // get
   std::string get_id();
