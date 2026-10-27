@@ -13,7 +13,7 @@ private:
 public:
   void create_task(std::string description);
   void read_task();
-  void update_task(std::string new_description);
+  bool update_task(int id, std::string new_description);
   void delete_task(int id);
 };
 
