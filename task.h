@@ -17,11 +17,11 @@ public:
   void set_description(std::string new_description);
 
   // get
-  int get_id();
-  std::string get_description();
+  int get_id() const;
+  std::string get_description() const;
 
   // methods
-  void print_info();
+  void print_info() const;
 };
 
 #endif

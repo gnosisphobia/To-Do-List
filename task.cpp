@@ -11,10 +11,10 @@ void Task::set_description(std::string new_description) {
 }
 
 // get
-int Task::get_id() { return id; }
-std::string Task::get_description() { return description; }
+int Task::get_id() const { return id; }
+std::string Task::get_description() const { return description; }
 
-void Task::print_info() {
+void Task::print_info() const {
   std::cout << "ID: " << id << std::endl;
   std::cout << "Description: " << description << std::endl;
 }
