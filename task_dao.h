@@ -11,10 +11,10 @@ private:
   int next_id;
 
 public:
-  void create_task(std::string description);
+  void create_task(int id, std::string description);
   void read_task();
   bool update_task(int id, std::string new_description);
-  void delete_task(int id);
+  bool delete_task(int id);
 };
 
 #endif

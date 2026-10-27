@@ -10,7 +10,7 @@ private:
 public:
   // constructor
   Task(); // default
-  Task(std::string description);
+  Task(int id, std::string description);
 
   // set
   void set_id(int new_id);
