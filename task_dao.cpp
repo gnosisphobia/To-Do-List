@@ -1,7 +1,7 @@
 #include "task_dao.h"
 #include "task.h"
 
-void TaskDAO::create_task(int id, std::string description) {
+void TaskDAO::create_task(std::string description) {
   Task new_task(next_id++, description);
   task_list.push_back(new_task);
   std::cout << "New Task Created!\n";
